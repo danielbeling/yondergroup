@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700;800&display=swap');
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto; /* Permite rolagem se o conteúdo ultrapassar a altura */
+  background-color: #fefeff;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 300ms, transform 300ms;
+}
